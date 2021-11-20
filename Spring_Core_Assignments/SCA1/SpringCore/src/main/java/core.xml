@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+   
+    <bean id="adrs" class="Spring.SpringCore.Address">
+   <property name="street" value="nehra"/>
+   <property name="city" value="darbhanga"/>
+   <property name="state" value="bihar"/>
+   <property name="zip" value="847233"/>
+   <property name="country" value="India"/>
+   </bean>
+     <bean id="cust" class="Spring.SpringCore.Customer">
+   <property name="cid" value="101"/>
+   <property name="cname" value="nilesh"/>
+   <property name="cnum" value="7352331204"/>
+   <constructor-arg ref="adrs"/>
+  
+   </bean>
+   </beans>

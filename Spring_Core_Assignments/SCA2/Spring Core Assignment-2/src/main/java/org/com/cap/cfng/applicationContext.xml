@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id = "answer" class="org.com.cap.beans.Answer">
+<property name="l">
+<list>
+<value>Tarun Kumar nanda</value>
+<value>Nilesh Mondal</value>
+<value>Anshul Bharti</value>
+</list>
+</property>
+
+
+<property name ="s">
+<set>
+<value>Tarun Kumar nanda</value>
+<value>Nilesh Mondal</value>
+<value>Anshul Bharti</value>
+</set>
+</property>
+
+<property name="mp">
+<map>
+<entry key="1" value="Tarun Kumar nanda"/>
+<entry key="2" value ="Nilesh Mondal"/>
+<entry key="3" value="Anshul Bharti"/>
+</map>
+</property>
+</bean>
+
+
+
+    <bean id = "qtn" class="org.com.cap.beans.Question">
+       <property name="qid" value="1"/>
+       <property name="question" value="What is Your Full Name ? "/>
+       <property name="ans" ref="answer"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+
+
+<bean id="employee" class="corequestion5.Employee">
+
+<property name="age" value="21"/>
+<property name="name" value="sultan"/>
+
+
+</bean>
+
+<bean id="address" class="corequestion5.Address">
+
+<property name="street" value="lane 1"/>
+<property name="city" value="pul"/>
+<property name="state" value="JK"></property>
+</bean>
+
+</beans>
