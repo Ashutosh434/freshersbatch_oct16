@@ -1,0 +1,11 @@
+a:visited{
+    color: green;
+}
+
+a:link{
+    color: hotpink;
+}
+
+a:hover{
+    color: rgb(182, 48, 115);
+}
