@@ -1,0 +1,47 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.container{
+    background-color: rgb(232, 255, 250);
+    width: 30%;
+    margin: 50px auto;
+    padding: 10px 30px 30px 25px;
+}
+
+h2{
+    color: red;
+}
+
+label{
+    font-size: large;
+}
+
+input[type=text], input[type=number]{
+    height: 30px;
+    border-radius: 5px;
+    padding-bottom: 3px;
+    display: inline;
+    width: 100%;
+}
+
+input[type=submit]{
+    background-color: cornflowerblue;
+    border-radius: 4px;
+    height: 35px;
+    padding: auto;
+    color: rgb(232, 255, 250);
+}
+
+input[type=text]:valid{
+    border: 2px solid green;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:focus{
+    border: 3px dashed cornflowerblue;
+    outline: none;
+}
